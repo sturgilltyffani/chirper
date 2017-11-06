@@ -1,0 +1,38 @@
+button {
+    margin-top: 2em;
+    border-radius: 20px;
+    background-color: #B19DD7;
+    padding: 0 2em;
+    height: 3em;
+    opacity: .3;
+    border-color: transparent;
+    color: white;
+    position: absolute;
+    right: 0;
+}
+
+
+.chirpform-container {
+    background-color: #fcf4ff;
+    border-bottom-color: transparent;    
+}
+
+input, textarea {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 2px solid #E5DAF2;
+}
+
+input[type=text]:focus {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 2px solid #B19DD7;
+}
+
+.mat-card {
+    width: 112%;
+
+}
+

@@ -1,0 +1,23 @@
+<mat-card class="form-and-profile chirpform-container">
+  <mat-card-header>
+      <img mat-card-avatar src="https://www.colourbox.com/preview/11113946-bird-avatar.jpg">
+  </mat-card-header>
+  <form novalidate [formGroup]="form" (ngSubmit)="ngOnInit()">
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput formControlName="username" form="username" type="text" placeholder="username">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <textarea matInput formControlName="message" #text (keyup)="myText = text.value" form="message" type="text" placeholder="What's up?"></textarea><span>{{myText | countdown:140}}</span>
+      </mat-form-field>
+  </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>CHIRP</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+
+
+            
+        

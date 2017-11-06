@@ -1,0 +1,27 @@
+<ng-container *ngIf="!!chirp">
+    <mat-card class="postcards" *ngFor="let chirp of chirps">
+        <mat-card-header>
+            <mat-card-title style="font-weight:bold"> {{ chirp.name }} </mat-card-title>
+            <mat-card-subtitle> {{ chirp.handle }} </mat-card-subtitle>
+            <img mat-card-avatar src="https://www.colourbox.com/preview/11113946-bird-avatar.jpg">
+        </mat-card-header>
+        <mat-card-content>
+            {{ chirp.message }} 
+        </mat-card-content>
+        <mat-card-actions class="button-row" style="color:#390962">
+                <button mat-icon-button>
+                    <mat-icon>reply</mat-icon>
+                </button>
+                <button mat-icon-button>
+                    <mat-icon>autorenew</mat-icon>
+                </button>
+                <button mat-icon-button>
+                    <mat-icon>thumb_up</mat-icon>
+                </button>
+                <button mat-icon-button>
+                    <mat-icon>message</mat-icon>
+                </button>
+            <!-- BUTTONS: reply, rechirp, like, direct message -->
+        </mat-card-actions>
+      </mat-card>
+</ng-container>

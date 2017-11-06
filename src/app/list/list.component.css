@@ -1,0 +1,19 @@
+.postcards {
+    margin: 2px 30px;  
+}
+
+.icons {
+    margin-right: 5px;
+  }
+
+  .something {
+      width: 100%;
+      height: 275px;
+    
+  }
+
+  app-chirpform, app-profile {
+      height: 100%;
+      width: 50%;
+      float: left;
+  }
